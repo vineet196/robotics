@@ -16,10 +16,10 @@
 #SBATCH --output=mill-%j.out
 #SBATCH --error=mill-%j.err
 #SBATCH --mail-type=begin,end,fail
-#SBATCH --mail-user=username@umsystem.edu          # <-- EDIT (1)
+#SBATCH --mail-user=vrvfx@umsystem.edu          # <-- EDIT (1)
 
 # ---- team settings -------------------------------------------------
-HF_ID=<username>                       # <-- EDIT (2)
+HF_ID=vineetr196                       # <-- EDIT (2)
 DATASET=$HF_ID/so101_pickplace_v1                   # must match your lerobot-record repo_id
 MODEL=$HF_ID/act_so101_pickplace_v1
 DATASET_DIR=/share/ceph/scratch/$USER/so101_pickplace_v1   # converted copy from section 5.0
